@@ -1,0 +1,99 @@
+/* Responsive Sidebar And Header */
+@media screen and (max-width:1200px) {
+    .full_name_user span:first-child {
+        display: none;
+    }
+
+    .operation_section {
+        padding: 10px;
+    }
+
+    .message_list_user {
+        right: 15px;
+    }
+
+    .wallet_invoices {
+        padding: 25px 8px;
+    }
+
+    .wallet_card_balance {
+        padding: 1rem 0.3rem 0 0.3rem;
+
+    }
+}
+
+
+
+@media screen and (min-width:1000px) {
+    .burger_menu, main .search_box_header {
+        display: none;
+    }
+}
+
+@media screen and (max-width:999px) {
+    body {
+        grid-template-areas: "header header""main main";
+    }
+
+    aside, .title_header, header .search_box_header, .full_name_user span:first-child {
+        display: none;
+    }
+
+    aside {
+        width: 75%;
+        height: 100%;
+        z-index: 999;
+        background-color: var(--color-white);
+    }
+
+    header {
+        padding: 8px;
+    }
+
+    header .user_action {
+        gap: 1rem;
+    }
+
+    .container_main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .chart_bitcoin {
+        padding: 20px 15px;
+    }
+
+    .sidebar_chat {
+        display: none;
+    }
+
+    .message_chat {
+        width: 100%;
+    }
+
+    .first_row_wallet, .payment_method_cards {
+        flex-wrap: wrap;
+    }
+
+    .wallet_cards, .wallet_invoices {
+        width: 100%;
+    }
+
+    .wallet_cards_bank, .wallet_card_balance, .payment_method_carditem {
+        width: 100%;
+    }
+
+    .seconde_row_wallet {
+        flex-direction: column;
+    }
+
+    .wallet_billing, .wallet_transaction {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:566px) {
+    .wallet_cards_row {
+        flex-wrap: wrap;
+    }
+}
